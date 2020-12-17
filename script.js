@@ -32,9 +32,9 @@ window.addEventListener("load", function() {
 	launchForm.addEventListener("submit", function(event) {
 		event.preventDefault();
 		
-		if (pilotName.value === "" || copilotName.value === "" || fuelLevel.value === "" || cargoMass.value === "") {
+		if (pilotName.value == "" || copilotName.value == "" || fuelLevel.value == "" || cargoMass.value == "") {
 			alert("Enter all Required fields!");
-		} else if (isNaN(Number(pilotName.value)) === false || isNaN(Number(copilotName.value)) === false ||isNaN(Number(fuelLevel.value)) || isNaN(Number(cargoMass.value))) {
+		} else if (isNaN(Number(pilotName.value)) == false || isNaN(Number(copilotName.value)) == false ||isNaN(Number(fuelLevel.value)) == true || isNaN(Number(cargoMass.value)) == true) {
 			alert("Please input valid information for all fields!");
 		}
 		pilotStatus.innerHTML = `Pilot ${pilotName.value} is ready for Launch`;
